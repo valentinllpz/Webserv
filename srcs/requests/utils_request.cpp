@@ -6,7 +6,7 @@
 /*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 20:44:54 by vlugand-          #+#    #+#             */
-/*   Updated: 2021/12/02 10:59:54 by vlugand-         ###   ########.fr       */
+/*   Updated: 2022/08/08 18:26:24 by vlugand-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void		remove_first_ows(std::string & s)
 {
 	size_t	pos = 0;
 
-	for (std::string::const_iterator it = s.cbegin() ; it != s.cend(); ++it)
+	for (std::string::const_iterator it = s.begin() ; it != s.end(); ++it)
 	{
         if (*it != ' ' && *it != '\t')
 			break ;

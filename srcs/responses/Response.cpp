@@ -6,7 +6,7 @@
 /*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 11:23:30 by vlugand-          #+#    #+#             */
-/*   Updated: 2022/01/14 15:35:59 by vlugand-         ###   ########.fr       */
+/*   Updated: 2022/08/08 18:36:32 by vlugand-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -257,13 +257,23 @@ int		Response::analyzeRequest()
 		return SUCCESS;
 	}
 	else if (this->ft_redirection())
+	{
 		return (SUCCESS);
+	}
+	
 	if (!this->defineAbsolutePath())
+	{
 		return (FAILURE);
-    else if (_req.getMethod() == "GET")
+	}
+	else if (_req.getMethod() == "GET")
+	{
         this->ft_get();
-    else if (this->_req.getMethod() == "DELETE")
+	}
+	else if (this->_req.getMethod() == "DELETE")
+	{
         this->ft_delete();
+	}
+	
 	return SUCCESS;
 }
 

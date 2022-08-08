@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   config_file.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jehannedussert <marvin@42.fr>              +#+  +:+       +#+        */
+/*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/15 13:50:42 by jehannedu         #+#    #+#             */
-/*   Updated: 2022/01/15 13:51:00 by jehannedu        ###   ########.fr       */
+/*   Updated: 2022/08/08 18:25:33 by vlugand-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,7 +140,7 @@ std::vector<s_serverConfig>	ft_get_serverTab(std::vector<s_serverConfig> &server
 
 int	ft_check_file(std::string file)
 {
-	std::ifstream				file_name(file);
+	std::ifstream				file_name(file.c_str());
 	size_t						server_nb = 0;
 	std::string					line;
 

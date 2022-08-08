@@ -6,7 +6,7 @@
 /*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 12:26:40 by jdussert          #+#    #+#             */
-/*   Updated: 2022/01/06 18:39:25 by vlugand-         ###   ########.fr       */
+/*   Updated: 2022/08/08 18:33:21 by vlugand-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@
 # include <dirent.h>
 # include <sys/stat.h>
 # include <sys/types.h>
+# include <sys/wait.h>
 # include <climits>
 
 /* ************************************************************************** */
