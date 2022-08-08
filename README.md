@@ -1,40 +1,13 @@
-# Welcome to our webserv repository 👋
+# Webserv
 
-The objective of Webserv is to write an HTTP server in C++ 98. <br />
-Here you will learn more about :
-- [HTTP protocol](#what-is-HTTP)
-- [Select, poll, epoll, kqueue](#technical-choice)
-- [Socket programming (server + client)](#socket-programming)
-
-# What is HTTP
-
-```
-HTTP is a [client-server] protocol for fetching resources such as HTML documents. 
-It is the foundation of any data exchange on the Web and it is a client-server protocol, 
-which means requests are initiated by the recipient, usually the Web browser.
-```
-
-🖇 [Reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-
-Requests will be sent by a client (the web browser) to a server which will gives an answer called response.
-The HTTP protocol should be reliable and connexion-oriented. Therefore our webserv will be based on the TCP standard (=/= UCP standard).
-
-## Differences between HTTP protocols
-
-Version|Behavior
------|------
-HTTP/1.0|opens a separate TCP connection for each HTTP request/response pair ⚠️ less efficient than sharing a single TCP connection when multiple requests are sent
-HTTP/1.1|introduces pipelining and persistent connections. HTTP messages are human-readable.
-HTTP/2|multiplexed messages over a single connection. Connection is kept warm and efficient. HTTP messages are not human-readable because of its binary structure.
+This [42](https://42.fr/en/homepage/) project's goal is to make us write our own web server from scratch in C++. We needed to master [socket programming](https://www.geeksforgeeks.org/socket-programming-cc/) to allow communication between our server and a client. Another important part of this project was to understand in depth what is the [HTTP protocol](https://developer.mozilla.org/en/docs/Web/HTTP) and respect it whilst handling [requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) and sending [responses](https://developer.mozilla.org/fr/docs/Web/HTTP/Status), in order to let our server communicate with a modern browser. We based our configuration file syntax on a logic close to the one used by [Nginx](https://www.nginx.com/).
 
 ## How does it work
 
-#### 1) The client asks the server to open a connexion to send one or several requests and receive answers. It can be:
-* an new connexion
-* an existing one that has been previously opened
-#### 2) The client sends a request to the server
-#### 3) The server sends an answer to the client
-#### 4) The connexion is closed or will be reused for future requests
+ 1) The client asks the server to open a connexion to send one or several requests and receive answers. It can be a new connexion or an existing one that has been previously opened.
+ 2) The client sends a request to the server.
+ 3) The server sends an answer to the client.
+ 4) The connexion is closed or will be reused for future requests.
 
 ## Request & answer's structure
 
