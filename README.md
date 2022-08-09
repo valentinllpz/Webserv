@@ -207,3 +207,5 @@ Return value:
 - [How to build a web client? (sockets)](https://www.youtube.com/watch?v=bdIiTxtMaKA&list=PL9IEJIKnBJjH_zM5LnovnoaKlXML5qh17&index=2&ab_channel=JacobSorber)
 - [Program your own web server in C. (sockets) ](https://www.youtube.com/watch?v=esXw4bdaZkc)
 - [Why nginx is faster than Apache, and why you needn't necessarily care — Django deployment](https://djangodeployment.com/2016/11/15/why-nginx-is-faster-than-apache-and-why-you-neednt-necessarily-care/)
+
+# Team
