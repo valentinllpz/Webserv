@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   webserv.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 23:21:43 by vlugand-          #+#    #+#             */
-/*   Updated: 2022/01/14 15:19:52 by vlugand-         ###   ########.fr       */
+/*   Updated: 2022/08/09 23:25:05 by valentin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,6 +143,18 @@ int poll_loop(std::vector<Server> & servers)
             }
             polling_clients_requests(servers);
         }
+		if (pollResult < 0)
+		{
+			int errnum = errno;
+			if (errnum == 4)
+				perror(" ");
+			else
+			{
+				fprintf(stderr, "Value of errno: %d\n", errno);
+				perror("Error printed by perror");
+				fprintf(stderr, "Error opening file: %s\n", strerror( errnum ));
+			}	
+		}
         for (size_t i = servers.size(); i < g_all.nfds; i++)
             if (checking_timeout(servers, i))
 			    pollhup(servers, i);

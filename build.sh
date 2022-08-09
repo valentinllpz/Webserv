@@ -1,1 +1,1 @@
-make && sed -i 's@PWD@'"$PWD"'@' example.conf
+make && sed -i '' 's@PWD@'"$PWD"'@' example.conf

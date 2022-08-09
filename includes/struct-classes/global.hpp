@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   global.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 12:26:25 by jdussert          #+#    #+#             */
-/*   Updated: 2021/12/21 21:44:24 by vlugand-         ###   ########.fr       */
+/*   Updated: 2022/08/09 23:12:00 by valentin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ struct				s_global
 	std::vector<Request>			pendingRequests;
 };
 static volatile int g_run = 1;
+extern int errno ;
 
 #endif

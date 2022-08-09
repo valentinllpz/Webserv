@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   common.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 12:26:40 by jdussert          #+#    #+#             */
-/*   Updated: 2022/08/08 18:33:21 by vlugand-         ###   ########.fr       */
+/*   Updated: 2022/08/09 23:26:31 by valentin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 // # define SENDBUF 4096
 # define SENDBUF 4096
 # define SERVER_BACKLOG 100
-# define MAX_CLIENTS 300
+# define MAX_CLIENTS 100
 # define TIMEOUT 30
 # define TRUE	1
 # define FALSE	0
