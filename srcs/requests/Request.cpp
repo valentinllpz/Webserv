@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Request.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vlugand- <vlugand-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 19:33:12 by vlugand-          #+#    #+#             */
-/*   Updated: 2022/01/14 18:20:00 by vlugand-         ###   ########.fr       */
+/*   Updated: 2022/08/10 15:13:24 by valentin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -222,8 +222,6 @@ bool	Request::checkBodyDetails()
 	if (tmp != "UNSET" && tmp.find_first_not_of("0123456789") != std::string::npos)
 		return (this->parsingError(400));
 	this->_contentLength = atoi(tmp.c_str());
-	if (this->_contentLength < 0)
-		return (this->parsingError(400));
 	return (TRUE);
 }
 

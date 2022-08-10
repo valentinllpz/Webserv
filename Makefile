@@ -33,7 +33,7 @@ SRCS = main.cpp ${SRCS_CONF_PARSING} ${SRCS_DEBUG_PARSING} ${SRCS_GNL} ${SRCS_RE
 
 OBJECTS = $(SRCS:.cpp=.o)
 
-CXX = @clang++
+CXX = @g++
 
 CXXFLAGS += -Wall -Wextra -Werror -std=c++98
 DEBUG += -Wall -Wextra -Werror -std=c++98 -fsanitize=address -g3
