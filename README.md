@@ -1,5 +1,7 @@
 # Webserv
 
+![demo](demo.gif)
+
 This [42](https://42.fr/en/homepage/) project's goal is to make us write our own HTTP/1.1 [web server](https://en.wikipedia.org/wiki/Web_server) from scratch in C++. I worked on this project with [Jehanne Dussert](https://github.com/JehanneDussert/) and [Melchior Maj](https://github.com/mmaj0708/).
 
 We needed to master [socket programming](https://www.geeksforgeeks.org/socket-programming-cc/) to allow communication between our server and a client. Another important part of this project was to understand in depth what is the [HTTP protocol](https://developer.mozilla.org/en/docs/Web/HTTP) and respect it whilst handling [requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) and sending [responses](https://developer.mozilla.org/fr/docs/Web/HTTP/Status), in order to let our server communicate with a modern browser. We based our configuration file syntax on a logic close to the one used by [Nginx](https://www.nginx.com/).
